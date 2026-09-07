@@ -1,11 +1,11 @@
 export default function CTASection() {
   
     return (
-        <section className="flex w-full justify-center px-6">
+        <section className="flex w-full justify-center px-6 mb-4">
             <div className="flex w-full max-w-[1134px] flex-col items-center gap-8 rounded-lg bg-primary px-6 py-8 text-center md:px-16">
                 <p className="font-nunito text-base font-semibold leading-[150%] tracking-[0.48px] text-white md:text-xl md:tracking-[0.6px]">
                     <span className="md:hidden">
-                        Don't just dream it—let's build it! Click now and start your
+                        Don't just dream it - let's build it! Click now and start your
                         project with Tobams Group. Your journey to digital excellence
                         begins here.
                     </span>
