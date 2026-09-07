@@ -48,7 +48,7 @@ export default function Navbar() {
                 </div>
 
                 {/* mobile menu */}
-                <button type="button" onClick={() => setMenuOpen((prev) => !prev)} className="lg:hidden bg-[#151515] p-2">
+                <button type="button" onClick={() => setMenuOpen((prev) => !prev)} className="lg:hidden bg-[#151515] rounded-md text-white p-2">
                     {menuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
                 </button>
             </div>
