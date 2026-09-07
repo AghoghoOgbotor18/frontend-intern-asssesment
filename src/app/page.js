@@ -14,8 +14,9 @@ export default function Home (){
       <TrainingPrograms />
       <Management />
       <Transformation />
-      <CTASection />
       <ConsultantSection />
+      <CTASection />
+      
     </>
   )
 }
