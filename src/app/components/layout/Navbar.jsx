@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, User, ArrowRight, Menu, X } from "lucide-react";
+import { ChevronDown, User, Menu, X } from "lucide-react";
 import Image from "next/image";
 
 const navlinks = [
@@ -48,7 +48,7 @@ export default function Navbar() {
                 </div>
 
                 {/* mobile menu */}
-                <button type="button" onClick={() => setMenuOpen((prev) => !prev)} className="lg:hidden">
+                <button type="button" onClick={() => setMenuOpen((prev) => !prev)} className="lg:hidden bg-[#151515] p-2">
                     {menuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
                 </button>
             </div>
@@ -111,7 +111,6 @@ export default function Navbar() {
                 </button>
                 <button className="flex items-center justify-center gap-2 rounded bg-accent px-5 py-3 text-white">
                     Take Assessments
-                    <ArrowRight className="h-[18px] w-[18px]" />
                 </button>
                 </div>
             )}
