@@ -90,7 +90,7 @@ export default function ConsultantSection() {
             <span>Learn More</span>
 
             <FiArrowUpRight className="hidden h-6 w-6 md:block" />
-            <FaChevronRight className="h-8 w-8 md:hidden" />
+            <FaChevronRight className="h-6 w-6 md:hidden" />
           </a>
         </div>
       </div>
