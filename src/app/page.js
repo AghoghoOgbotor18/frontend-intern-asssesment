@@ -1,3 +1,5 @@
+import ConsultantSection from "./components/consultant/Consultant";
+import CTASection from "./components/CtaSection";
 import Hero from "./components/Hero";
 import LearningManagementSystem from "./components/LearningManagementSystem";
 import Management from "./components/Management";
@@ -12,6 +14,8 @@ export default function Home (){
       <TrainingPrograms />
       <Management />
       <Transformation />
+      <CTASection />
+      <ConsultantSection />
     </>
   )
 }
