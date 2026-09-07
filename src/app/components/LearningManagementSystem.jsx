@@ -14,21 +14,21 @@ export default function LearningManagementSystem() {
     return (
         <section className="py-10">
             <div className="bg-primary/10 p-6 lg:mx-0 lg:p-12">
-                <div className="flex flex-col gap-6 lg:grid lg:grid-cols-2 lg:items-center lg:gap-x-20">
+                <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[minmax(0,556.88px)_minmax(0,1fr)] lg:items-center lg:gap-x-20">
                     <h2 className="text-xl font-semibold leading-[1.5] tracking-[0.03em] text-primary lg:col-start-2 lg:row-start-1 lg:text-[40px]">
                         Learning Management System
                     </h2>
 
-                    <div className="relative mx-auto aspect-square w-full max-w-[327px] shrink-0 overflow-hidden rounded-full lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:aspect-auto lg:h-[568px] lg:w-[556.88px] lg:max-w-none lg:rounded-[357px]">
+                    <div className="relative mx-auto aspect-square w-full max-w-[327px] shrink-0 overflow-hidden rounded-full lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:aspect-auto lg:h-[568px] lg:w-full lg:max-w-none lg:rounded-[357px]">
                         <Image
                         src="/images/learning.jpg"
-                        alt="An instructor and learner reviewing course material"
+                        alt="Two business people smiling"
                         fill
                         className="object-cover"
                         />
                     </div>
 
-                    <div className="flex flex-col gap-6 rounded-lg bg-primary/10 p-6 lg:col-start-2 lg:row-start-2">
+                    <div className="flex min-w-0 flex-col gap-6 rounded-lg bg-primary/10 p-6 lg:col-start-2 lg:row-start-2">
                         <p className="text-sm leading-[1.5] text-foreground lg:text-lg">
                             TG Academy is a hub of knowledge and skill-building resources
                             designed to empower tech talents on their learning journey.
@@ -38,7 +38,7 @@ export default function LearningManagementSystem() {
                             management, TG Academy offers a wide range of courses to
                             cater to diverse learning needs. With accessible and
                             interactive learning materials, individuals can enhance their
-                            skills and stay ahead in today's competitive tech
+                            skills and stay ahead in today&apos;s competitive tech
                             landscape.
                         </p>
 
@@ -46,14 +46,14 @@ export default function LearningManagementSystem() {
                             <h3 className="text-base font-bold leading-[1.5] text-primary lg:text-lg">
                                 Some of our courses include
                             </h3>
-                            <ul className="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-3">
+                            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3">
                                 {courses.map((course) => (
                                 <li
                                     key={course}
-                                    className="flex items-start gap-2 text-sm leading-[1.5] text-foreground lg:text-base"
+                                    className="flex min-w-0 items-start gap-2 text-sm leading-[1.5] text-foreground lg:text-base"
                                 >
                                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                                    {course}
+                                    <span className="min-w-0 break-words">{course}</span>
                                 </li>
                                 ))}
                             </ul>
