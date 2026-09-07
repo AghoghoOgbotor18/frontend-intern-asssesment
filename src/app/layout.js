@@ -1,7 +1,12 @@
-import { Nunito_Sans } from "next/font/google";
+import { Nunito, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+
+const nunito = Nunito({
+  variable: "--font-nunito",
+  subsets: ["latin"],
+});
 
 const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",
@@ -15,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${nunitoSans.variable} h-full antialiased`}>
+    <html lang="en" className={`${nunitoSans.variable} ${nunito.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Navbar />
         <main className="flex-grow">

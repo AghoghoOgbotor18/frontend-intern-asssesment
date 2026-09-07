@@ -17,6 +17,7 @@
   --color-accent: var(--color-accent);
   --color-surface: var(--color-surface);
   --font-sans: var(--font-nunito-sans);
+  --font-nunito: var(--font-nunito);
 }
 
 body {
